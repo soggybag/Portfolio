@@ -8,9 +8,13 @@ You will find art and design for completed projects and work in progress. At the
 development skills. You can find the design work for these apps on Behance. The projects themselves exist here on Github. 
 
 [https://github.com/soggybag/scribblegram](https://github.com/soggybag/scribblegram)
+
 [On the App Store](https://itunes.apple.com/us/app/scribblegram/id955086437?mt=8&uo=4)
+
 [https://github.com/soggybag/20-Life](https://github.com/soggybag/20-Life)
+
 [On the App Store](https://itunes.apple.com/us/app/20-life/id954969580?mt=8&uo=4)
+
 
 Here are a few more projects. 
 [https://github.com/soggybag/Falling-Stars](https://github.com/soggybag/Falling-Stars)

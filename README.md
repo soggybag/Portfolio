@@ -17,8 +17,11 @@ development skills. You can find the design work for these apps on Behance. The 
 
 
 Here are a few more projects. 
+
 [https://github.com/soggybag/Falling-Stars](https://github.com/soggybag/Falling-Stars)
+
 [https://github.com/soggybag/Sine-Wave](https://github.com/soggybag/Sine-Wave)
+
 [https://github.com/soggybag/Tower-Defense](https://github.com/soggybag/Tower-Defense)
 
 ##Wordpress work

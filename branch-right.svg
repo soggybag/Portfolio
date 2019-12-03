@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="207px" height="645px" viewBox="0 0 207 645" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="801px" height="645px" viewBox="0 0 801 645" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
     <title>branch-right</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="branch-right" transform="translate(-395.000000, 0.433594)" stroke="#FFFFFF" stroke-width="7">
-            <line x1="399" y1="0" x2="399" y2="644.539062" id="Path"></line>
-            <path d="M399,516.476562 C406.187245,486.36849 420.106061,471.314453 440.756447,471.314453 C459.153831,471.314453 522.5556,471.314453 563.642081,471.314453 C586.80379,471.314453 598,456.671893 598,435.314453" id="Path-2"></path>
+        <g id="branch-right" transform="translate(1.000000, 0.433594)">
+            <line x1="399" y1="0" x2="399" y2="644.539062" id="Path" stroke="#FFFFFF" stroke-width="7"></line>
+            <rect id="Rectangle" stroke-opacity="0.01" stroke="#FF0000" x="0" y="115.566406" width="799" height="401"></rect>
+            <path d="M399,516.476562 C406.187245,486.36849 420.106061,471.314453 440.756447,471.314453 C459.153831,471.314453 522.5556,471.314453 563.642081,471.314453 C586.80379,471.314453 598,456.671893 598,435.314453" id="Path-2" stroke="#FFFFFF" stroke-width="7"></path>
         </g>
     </g>
 </svg>

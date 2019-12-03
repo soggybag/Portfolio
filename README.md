@@ -1,3 +1,10 @@
+![GitHub followers](https://img.shields.io/github/followers/soggybag?style=social)
+![GitHub forks](https://img.shields.io/github/forks/soggybag/Portfolio?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/soggybag/Portfolio?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/soggybag/Portfolio?style=social)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/soggybag/Portfolio)
+![GitHub issues](https://img.shields.io/github/issues/soggybag/Portfolio)
+
 # Portfolio
 
 Live: http://soggybag.github.io/Portfolio/

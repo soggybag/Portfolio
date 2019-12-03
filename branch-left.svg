@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="645px" viewBox="0 0 208 645" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>branch-left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="branch-left" transform="translate(204.500000, 322.500000) scale(-1, 1) translate(-204.500000, -322.500000) translate(-195.000000, 0.000000)" stroke="#FFFFFF" stroke-width="7">
+            <line x1="400" y1="0" x2="400" y2="644.539062" id="Path"></line>
+            <path d="M400,516.476562 C407.223362,486.36849 421.212121,471.314453 441.966279,471.314453 C460.456112,471.314453 524.176482,471.314453 565.469428,471.314453 C588.747527,471.314453 600,456.671893 600,435.314453" id="Path-2"></path>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,6 @@
 # Portfolio
 
-Live: https://github.com/soggybag/Portfolio
+Live: http://soggybag.github.io/Portfolio/
 
 <!--
 

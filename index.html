@@ -3,6 +3,7 @@
   <head>
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="js/ms-slide-show.css" rel="stylesheet">
     <style>
       * {
         margin: 0;
@@ -38,14 +39,14 @@
       /* --------------------------- */
       /* Ornaments */
       .leaf {
-        background-image: url(leaf.svg);
+        background-image: url(images/leaf.svg);
         background-position: center;
         background-repeat: no-repeat;
         height: 144px;
       }
 
       .roots {
-        background-image: url(roots.svg);
+        background-image: url(images/roots.svg);
         background-position: center top;
         background-repeat: no-repeat;
         height: 307px;
@@ -81,13 +82,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url(branch-right.svg);
+        background-image: url(images/branch-right.svg);
         background-position: center;
         background-repeat: no-repeat;
       }
 
       .project:nth-child(2n) {
-        background-image: url(branch-left.svg);
+        background-image: url(images/branch-left.svg);
       }
 
       .project-content {
@@ -113,9 +114,14 @@
         align-items: center;
       }
 
-      .project-image > img {
+      .project-image > div {
+        position: relative;
+        width: 240px;
+        height: 240px;
         border: 7px solid;
         border-radius: 50%;
+        overflow: hidden;
+        transform: translateY(0); /* hacky fix for overflow */
       }
 
       .project-copy {
@@ -168,12 +174,17 @@
                 </p>
                 <div class="project-meta">
                   <a href="#">G</a>
-                  <a href="#">W</a>
                   <a href="#">?</a>
                 </div>
               </div>
               <div class="project-image">
-                <img src="#" width="240" height="240">
+                <div id="mobile" class="slide-show ms-slide-show">
+                  <div class="slide-show-inner">
+                    <img src="images/mobile.svg" width="226" height="226">
+                    <img src="images/mobile.svg" width="226" height="226">
+                    <img src="images/mobile.svg" width="226" height="226">
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -196,7 +207,13 @@
                 </div>
               </div>
               <div class="project-image">
-                <img src="#" width="240" height="240">
+                <div id="mobile" class="slide-show ms-slide-show">
+                  <div class="slide-show-inner">
+                    <img src="images/experiments.svg" width="226" height="226">
+                    <img src="images/experiments.svg" width="226" height="226">
+                    <img src="images/experiments.svg" width="226" height="226">
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -214,12 +231,10 @@
                 </p>
                 <div class="project-meta">
                   <a href="#">G</a>
-                  <a href="#">W</a>
-                  <a href="#">?</a>
                 </div>
               </div>
               <div class="project-image">
-                <img src="#" width="240" height="240">
+                <div></div>
               </div>
             </div>
           </section>
@@ -238,11 +253,34 @@
                 <div class="project-meta">
                   <a href="#">G</a>
                   <a href="#">W</a>
-                  <a href="#">?</a>
                 </div>
               </div>
               <div class="project-image">
-                <img src="#" width="240" height="240">
+                <div></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="e" class="project">
+            <div class="project-content">
+              <div class="project-copy">
+                <h1>Project 5</h1>
+                <p>This is the most amazing project description you have ever read. 
+                It's so good you're wondering why you haven't read it before. 
+                The vision and vistas of wonder it invokes inspire you to do the
+                things you have always wanted to do. </p>
+                <p>This the second paragraph, is a pretty straight forward 
+                  summary of the everything from the previous.
+                </p>
+                <div class="project-meta">
+                  <a href="#">G</a>
+                  <a href="#">W</a>
+                  <a href="#">?</a>
+                  <a href="#">!</a>
+                </div>
+              </div>
+              <div class="project-image">
+                <div></div>
               </div>
             </div>
           </section>
@@ -251,5 +289,7 @@
         <div class="roots"></div>
       </div>
     </section>
+
+    <script src="js/ms-slide-show.js"></script>
   </body>
 </html>

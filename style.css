@@ -60,15 +60,24 @@ a {
   margin: 0;
 }
 
+/* Page Nav */
 .page-nav > a {
   display: inline-block;
-  padding: 0.5rem;
-  margin: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0.2rem;
   border: 7px solid;
   border-radius: 10px;
   min-width: 3.5rem;
   text-align: center;
   color: #fff;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.25rem;
+}
+
+.page-nav > a:hover {
+  background-color: #fff;
+  color: #6095f2;
+  border-color: #fff;
 }
 
 
@@ -96,6 +105,10 @@ a {
 
 .project:nth-child(2n) .project-content {
   flex-direction: row-reverse;
+}
+
+.project:nth-child(2n) .project-copy > h1 {
+  text-align: right;
 }
 
 .project:nth-child(2n) .project-meta {

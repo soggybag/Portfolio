@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="242px" height="242px" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>meter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="meter" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle-Copy-2" stroke-opacity="0.01" stroke="#6095F2" x="0" y="0" width="240" height="240"></rect>
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="7" cx="120" cy="121" r="70"></circle>
+            <path d="M120,135 C142.890559,135 163.590443,144.379393 178.466105,159.50463 C165.944234,178.480972 144.434105,191 120,191 C95.5658952,191 74.055766,178.480972 61.5339406,159.507244 C76.4095567,144.379393 97.109441,135 120,135 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="7" fill="#FFFFFF"></path>
+            <line x1="120.5" y1="163.5" x2="159.5" y2="90.5" id="Line-5" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

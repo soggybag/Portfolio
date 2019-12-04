@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="242px" height="242px" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>node</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="node" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle" stroke-opacity="0.01" stroke="#6095F2" x="0" y="0" width="240" height="240"></rect>
+            <g id="Group-3" transform="translate(62.000000, 62.000000)">
+                <polygon id="Polygon" stroke="#FFFFFF" stroke-width="7" points="58 0 108.229473 29 108.229473 87 58 116 7.77052658 87 7.77052658 29"></polygon>
+                <text id="JS" font-family="AvenirNext-Bold, Avenir Next" font-size="48" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="31" y="73">JS</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

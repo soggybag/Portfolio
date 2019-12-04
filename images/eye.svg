@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="242px" height="242px" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>eye</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="eye" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle-Copy-2" stroke-opacity="0.01" stroke="#6095F2" x="0" y="0" width="240" height="240"></rect>
+            <path d="M120.391563,78 C149.289186,78 174.096981,95.5106395 184.783126,120.500097 C174.096318,145.489829 149.2888,163 120.391563,163 C91.4939391,163 66.6861445,145.489361 56,120.499903 C66.6868076,95.5101714 91.4943253,78 120.391563,78 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="7"></path>
+            <path d="M120.391563,93 C135.855536,93 148.391563,105.536027 148.391563,121 C148.391563,136.463973 135.855536,149 120.391563,149 C104.92759,149 92.3915628,136.463973 92.3915628,121 C92.3915628,105.536027 104.92759,93 120.391563,93 Z M120.391563,110 C114.316431,110 109.391563,114.924868 109.391563,121 C109.391563,127.075132 114.316431,132 120.391563,132 C126.466695,132 131.391563,127.075132 131.391563,121 C131.391563,114.924868 126.466695,110 120.391563,110 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="242px" height="242px" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>react</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="react" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle" stroke-opacity="0.01" stroke="#6095F2" x="0" y="0" width="240" height="240"></rect>
+            <ellipse id="Oval" stroke="#FFFFFF" stroke-width="7" cx="120" cy="120" rx="64" ry="27"></ellipse>
+            <ellipse id="Oval" stroke="#FFFFFF" stroke-width="7" transform="translate(120.000000, 120.000000) rotate(60.000000) translate(-120.000000, -120.000000) " cx="120" cy="120" rx="64" ry="27"></ellipse>
+            <ellipse id="Oval" stroke="#FFFFFF" stroke-width="7" transform="translate(120.000000, 120.000000) rotate(120.000000) translate(-120.000000, -120.000000) " cx="120" cy="120" rx="64" ry="27"></ellipse>
+            <circle id="Oval" fill="#FFFFFF" cx="120" cy="120" r="10"></circle>
+        </g>
+    </g>
+</svg>

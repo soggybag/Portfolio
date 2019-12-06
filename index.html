@@ -11,11 +11,11 @@
       <section class="page-header">
         <h1 class="page-title">Mitchell Hudson</h1>
         <nav class="page-nav">
-          <a href="#a">Vision</a>
-          <a href="#b">Expertise</a>
-          <a href="#c">Mobile</a>
-          <a href="#d">Experience</a>
-          <a href="#e">Interests</a>
+          <a href="#vision">Vision</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#mobile">Mobile</a>
+          <a href="#experience">Experience</a>
+          <a href="#interests">Interests</a>
         </nav>
       </section>
 
@@ -26,7 +26,7 @@
       <div>
         <section>
 
-          <section id="a" class="project">
+          <section id="vision" class="project">
             <div class="project-content">
               <div class="project-copy">
                 <h1>Vision</h1>
@@ -54,7 +54,7 @@
             </div>
           </section>
       
-          <section id="b" class="project">
+          <section id="expertise" class="project">
             <div class="project-content">
               <div class="project-copy">
                 <h1>Expertise</h1>
@@ -83,7 +83,7 @@
             </div>
           </section>
 
-          <section id="c" class="project">
+          <section id="mobile" class="project">
             <div class="project-content">
               <div class="project-copy">
                 <h1>Mobile</h1>
@@ -109,7 +109,7 @@
             </div>
           </section>
 
-          <section id="d" class="project">
+          <section id="experience" class="project">
             <div class="project-content">
               <div class="project-copy">
                 <h1>Experience</h1>
@@ -139,7 +139,7 @@
             </div>
           </section>
 
-          <section id="e" class="project">
+          <section id="interests" class="project">
             <div class="project-content">
               <div class="project-copy">
                 <h1>Interests</h1>
@@ -170,7 +170,7 @@
           </section>
         </section>
     
-        <div class="roots"></div>
+        <div class="ground"></div>
 
         <footer class="page-footer">
           <div class="icon-grid">
@@ -188,6 +188,9 @@
             <i></i>
             <i class="fab fa-html5"></i>
           </div>
+          <div class="footer-center roots">
+            &nbsp;
+          </div>
           <div class="epilog">
             <h2>Hello World</h2>
             <p>Some text about me. Says a lot about why I made this. Maybe I mention
@@ -201,5 +204,30 @@
 
     <script src="https://kit.fontawesome.com/072ce5392e.js" crossorigin="anonymous"></script>
     <script src="js/ms-slide-show.js"></script>
+    <!-- smooth scroll behavior polyfill -->
+    <!-- https://github.com/iamdustan/smoothscroll -->
+    <script src="js/smoothscroll.js"></script>
+    <script>
+      // -------------------------------------------------
+      // Smooth Scroll
+      // - Needed to add a polyfill since 'smooth' option is 
+      // not supported in Safari currently. 
+
+      // Add button events. 
+      const nav = document.querySelector('nav')
+      nav.addEventListener('click', function(e){
+        e.preventDefault()
+        const href = e.target.href
+        console.log(href)
+        if (href) {
+          const id = href.split('#')[1]
+          document.getElementById(id).scrollIntoView({ 
+            behavior: 'smooth' 
+          });
+        } 
+      })
+
+      
+    </script>
   </body>
 </html>

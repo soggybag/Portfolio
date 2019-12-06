@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="696px" height="195px" viewBox="0 0 696 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>ground</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ground" transform="translate(3.500000, 4.000000)">
+            <line x1="344.5" y1="0" x2="345" y2="187.5" id="Line-2" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"></line>
+            <line x1="344.5" y1="16" x2="344.5" y2="0" id="Line-7" stroke="#FFFFFF" stroke-width="7" stroke-linecap="square"></line>
+            <line x1="0.5" y1="100.5" x2="688.5" y2="100.5" id="Line" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"></line>
+            <g id="Group-5" transform="translate(19.500000, 56.500000)">
+                <path d="M45.6103516,28.6533203 C40.1669922,32.0087891 31.6894531,33.6865234 20.1777344,33.6865234 C3.97886246,33.6865234 4.08839219,19.7062974 4.16399952,13.1093826 C4.16898765,12.674157 3.55271368e-15,11.213939 3.55271368e-15,10.8491211 C3.55271368e-15,9.4600096 4.19606427,9.12151887 4.31190546,7.79960441 C4.68762273,3.51213033 6.04802094,3.55271368e-14 10.828125,3.55271368e-14 C14.9973958,3.55271368e-14 16.9358724,3.96875 16.6435547,11.90625 C17.5001486,15.8867188 20.2496161,19.1158854 24.8919572,21.59375 C29.5342982,24.0716146 36.4404297,26.4248047 45.6103516,28.6533203 Z" id="Path-6" fill="#FFFFFF" transform="translate(22.805176, 16.843262) scale(-1, 1) translate(-22.805176, -16.843262) "></path>
+                <line x1="26.5" y1="33.5" x2="26.5" y2="40.5" id="Line-3" stroke="#FFFFFF" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

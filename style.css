@@ -38,13 +38,23 @@ a {
   height: 196px;
 }
 
+.ground {
+  background-image: url(images/ground.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 188px;
+  position: relative;
+  top: -1px;
+}
+
 .roots {
   background-image: url(images/roots.svg);
   background-position: center top;
   background-repeat: no-repeat;
-  height: 384px;
+  height: 295px;
   position: relative;
-  top: -1px;
+  top: -20px;
+  left: -2px;
 }
 
 /* --------------------------- */
@@ -107,6 +117,10 @@ a {
   flex-direction: row-reverse;
 }
 
+.project-copy > h1 {
+  font-size: 2.5rem;
+}
+
 .project:nth-child(2n) .project-copy > h1 {
   text-align: right;
 }
@@ -154,6 +168,7 @@ a {
 }
 
 
+/* ------------------------------- */
 /* Page Footer */
 .page-footer {
   width: 700px;
@@ -184,5 +199,22 @@ a {
 }
 
 .epilog {
-  margin: 0 3rem;
+  
+}
+
+.footer-center {
+  flex: 1;
+}
+
+.page-footer > div {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.page-footer > div:first-child {
+  margin-left: 0;
+}
+
+.page-footer > div:last-child {
+  margin-right: 0;
 }

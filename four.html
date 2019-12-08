@@ -98,7 +98,7 @@
       .content {
         margin: 4em;
         max-width: 560px;
-        height: 100%;
+        height: calc(100% - 4em);
         overflow: scroll;
       }
 
@@ -126,6 +126,21 @@
 
       #c {
 
+      }
+
+      #d {
+
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 120px);
+        grid-auto-rows: 120px;
+      }
+
+      .image-grid > img {
+        width: 120px;
+        height: auto;
       }
     </style>
   </head>
@@ -207,7 +222,28 @@
               <li>SF Public Open Spaces</li>
               <li>Data Visualizations</li>
             </ul>
-            <img src="images/mobile.svg">
+            <div class="image-grid">
+                <img src="images/mobile.svg">
+                <img src="images/heart.svg">
+                <img src="images/meter.svg">
+                <img src="images/node.svg">
+                <img src="images/onigiri.svg">
+                <img src="images/ramen.svg">
+                <img src="images/react.svg">
+                <img src="images/redux.svg">
+                <img src="images/eye.svg">
+                <img src="images/experiments.svg">
+                <img src="images/mobile.svg">
+                <img src="images/heart.svg">
+                <img src="images/meter.svg">
+                <img src="images/node.svg">
+                <img src="images/onigiri.svg">
+                <img src="images/ramen.svg">
+                <img src="images/react.svg">
+                <img src="images/redux.svg">
+                <img src="images/eye.svg">
+                <img src="images/experiments.svg">
+            </div>
           </div>
       </div>
     </div>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body, html {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        overflow: hidden;
+        margin: 0;
+      }
+      .container {
+        position: absolute;
+        width: calc(200% - 4em);
+        height: calc(200% - 4em);
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 4em));
+        grid-template-rows: repeat(2, calc(50% - 4em));
+        transition: 400ms ease-in-out;
+        left: 0;
+        top: 0;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .container > div {
+        padding: 1em;
+        display: flex;
+      }
+
+      .container > div > h1 {
+        position: absolute;
+      }
+
+      .container > div:nth-child(1) {
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: blanchedalmond;
+      }
+
+      .container > div:nth-child(2)  {
+        justify-content: flex-start;
+        align-items: flex-end;
+        background-color:darkorange;
+      }
+
+      .container > div:nth-child(3) {
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: darkseagreen;
+      }
+
+      .container > div:nth-child(4) {
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: cadetblue;
+      }
+
+      .content {
+        margin: 4em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="a">
+        <h1><a href="#a" data-id="a">A</a></h1>
+        <div class="content">
+          <h1>Mitchell Hudson</h1>
+          <p>Knows a little CSS and JavaScript, and likes to put what he 
+            knows together in creative ways.</p>
+        </div>
+      </div>
+
+      <div id="b">
+        <h1><a href="#b" data-id="b">B</a></h1>
+        <div class="content">
+            <h1>Skills</h1>
+            <p>Has worked on large and small projects for a variety of 
+              clients. Has made protypes and product mock ups in a 
+              range of software tools including: 
+            </p>
+            <ul>
+              <li>HTML/CSS/JS</li>
+              <li>Swift/Xcode</li>
+              <li>Flash Actionscript</li>
+              <li>Lua/Corona SDK</li>
+            </ul>
+          </div>
+      </div>
+
+      <div id="c">
+        <h1><a href="#c" data-id="c">C</a></h1>
+        <div class="content">
+            <h1>Experience</h1>
+            <p>Spent many years teaching college courses mostly
+              related to the artistic side software development.
+            </p>
+          </div>
+      </div>
+
+      <div id="d">
+        <h1><a href="#d" data-id="d">D</a></h1>
+        <div class="content">
+            <h1>Current Projects</h1>
+            <p>Besides this prortfolio you can also take a look at my
+              current projects on GitHub
+            </p>
+            <ul>
+              <li>Portfolio</li>
+              <li>Tetris</li>
+              <li>SF Public Open Spaces</li>
+              <li>Data Visualizations</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      const container = document.querySelector('.container')
+      document.addEventListener('click', function(e) {
+        e.preventDefault()
+
+        const id = e.target.dataset.id
+        console.log(id)
+
+        switch(id) {
+          case 'a':
+            container.style.left = 0
+            container.style.top = 0
+            break
+          
+          case 'b':
+            container.style.left = 'calc(-100% + 12em)'
+            container.style.top = 0
+            break
+          
+          case 'c':
+            container.style.left = 0
+            container.style.top = 'calc(-100% + 12em)'
+            break
+          
+          case 'd':
+            container.style.left = 'calc(-100% + 12em)'
+            container.style.top = 'calc(-100% + 12em)'
+            break
+          }
+        })
+    </script>
+  </body>
+</html>

@@ -171,7 +171,7 @@ a {
 /* ------------------------------- */
 /* Page Footer */
 .page-footer {
-  width: 700px;
+  width: 777px; /* hacking the width needs a more robust solution */
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -179,19 +179,18 @@ a {
 
 .page-footer > .icon-grid {
   display: grid;
-  grid-template-columns: repeat(3, 60px);
-  grid-template-rows: repeat(6, 60px);
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(4, 60px);
   grid-template-areas: "a b c d"
                        "e f g h"
                        "i j k l"
                        "m n o p";
 }
 
-.icon-grid > div {
-  width: 40px;
-  height: 40px;
-  border: 7px solid #fff;
-  border-radius: 10px;
+.icon-grid > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-grid > i {
@@ -217,4 +216,50 @@ a {
 
 .page-footer > div:last-child {
   margin-right: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .project {
+    background-position: -410px -140px;
+  }
+
+  .project:nth-child(2n) {
+    background-position: 110px -135px;
+  }
+
+  .project-content {
+    flex-direction: column-reverse !important;
+
+  }
+
+  .page-footer {
+    flex-direction: column;
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .leaf {
+    background-position: center top;
+    height: 145px;
+  }
+
+  .roots {
+    order: 99;
+    margin-top: 2rem !important;
+  }
+
+  .ground {
+    background-image: none;
+  }
+
+  .page-footer > .icon-grid {
+    margin-bottom: 2em;
+  }
+
 }

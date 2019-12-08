@@ -14,7 +14,7 @@
   // Make a slides show
   function makeSlides(slides) {
 
-    const images = Array.from(slides.querySelectorAll('.slide-show-inner > img'))
+    const images = Array.from(slides.querySelectorAll('.slide-show-inner > *'))
     const slidesInner = slides.querySelector('.slide-show-inner')
 
     let indicators = null

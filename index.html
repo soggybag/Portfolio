@@ -204,7 +204,7 @@
             <p>Some text about me. Says a lot about why I made this. Maybe I mention
               some of my hobbies.
             </p>
-            <p>Be sure to check out this other <a href="./four.html">portfolio concept</a>.</p>
+            <p>Be sure to check out this other <a class="external" href="./four.html">portfolio concept</a>.</p>
           </div>
         </footer>
       </div>
@@ -224,8 +224,13 @@
 
       // Add button events. 
       const body = document.querySelector('body')
-      body.addEventListener('click', function(e){
+      body.addEventListener('click', function(e) {
+        if (e.target.matches('.external')) {
+          return
+        }
+
         e.preventDefault()
+
         const href = e.target.closest('a').href
         console.log(e.target.closest('a'))
         if (href) {

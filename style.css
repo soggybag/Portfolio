@@ -226,11 +226,11 @@ a {
   }
 
   .project {
-    background-position: -410px -140px;
+    background-position: -370px -124px; /* Hacking the position */
   }
 
   .project:nth-child(2n) {
-    background-position: 110px -135px;
+    background-position: 77px -122px;
   }
 
   .project-content {

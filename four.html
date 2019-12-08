@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title></title>
+    <title>Mitchell Hudson</title>
     <style>
       * {
         box-sizing: border-box;
@@ -14,6 +14,8 @@
       body {
         overflow: hidden;
         margin: 0;
+        line-height: 1.5;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
       .container {
         position: absolute;
@@ -31,6 +33,29 @@
         margin: 0;
       }
 
+      .nav {
+        color: #fff;
+        border: 4px solid;
+        width: 4rem;
+        height: 4rem;
+        line-height: 3.4rem;
+        text-align: center;
+        border-radius: 50%;
+      }
+
+      .nav:hover {
+        border-color: #000;
+      }
+
+      .nav > a {
+        display: block;
+        color: #fff;
+      }
+
+      .nav:hover > a {
+        color: #000;
+      }
+
       a {
         text-decoration: none;
       }
@@ -44,10 +69,10 @@
         position: absolute;
       }
 
-      .container > div:nth-child(1) {
+      #a {
         justify-content: flex-end;
         align-items: flex-end;
-        background-color: blanchedalmond;
+        background-color: rgb(232, 208, 129);
       }
 
       .container > div:nth-child(2)  {
@@ -68,51 +93,109 @@
         background-color: cadetblue;
       }
 
+      /* -------------------------------------- */
+      /* Content */
       .content {
         margin: 4em;
+        max-width: 560px;
+        height: 100%;
+        overflow: scroll;
+      }
+
+      #a {
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      #a > .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      #b > .content > div {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      #b > .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      #c {
+
       }
     </style>
   </head>
   <body>
     <div class="container">
+
       <div id="a">
-        <h1><a href="#a" data-id="a">A</a></h1>
+        <h1 class="nav"><a href="#a" data-id="a">A</a></h1>
         <div class="content">
           <h1>Mitchell Hudson</h1>
           <p>Knows a little CSS and JavaScript, and likes to put what he 
             knows together in creative ways.</p>
+          <p><img src="./images/bowl.svg"></p>
         </div>
       </div>
 
       <div id="b">
-        <h1><a href="#b" data-id="b">B</a></h1>
+        <h1 class="nav"><a href="#b" data-id="b">B</a></h1>
         <div class="content">
-            <h1>Skills</h1>
-            <p>Has worked on large and small projects for a variety of 
-              clients. Has made protypes and product mock ups in a 
-              range of software tools including: 
-            </p>
-            <ul>
-              <li>HTML/CSS/JS</li>
-              <li>Swift/Xcode</li>
-              <li>Flash Actionscript</li>
-              <li>Lua/Corona SDK</li>
-            </ul>
+          <div>
+              <h1>Skills</h1>
+              <img src="./images/experiments.svg">
           </div>
+          <p>Has worked on large and small projects for a variety of 
+            clients. Has made protypes and product mock ups in a 
+            range of software tools including: 
+          </p>
+          <ul>
+            <li>HTML/CSS/JS</li>
+            <li>Swift/Xcode</li>
+            <li>Flash Actionscript</li>
+            <li>Lua/Corona SDK</li>
+          </ul>
+        </div>
       </div>
 
       <div id="c">
-        <h1><a href="#c" data-id="c">C</a></h1>
+        <h1 class="nav"><a href="#c" data-id="c">C</a></h1>
         <div class="content">
-            <h1>Experience</h1>
-            <p>Spent many years teaching college courses mostly
-              related to the artistic side software development.
-            </p>
-          </div>
+          <h1>Experience</h1>
+          <p>Spent many years teaching college courses mostly
+            related to the artistic side software development.
+          </p>
+
+          <p>Yourself off its pleasant ecstatic now law. Ye their mirth seems of songs. Prospect out bed contempt separate. Her inquietude our shy yet sentiments collecting. Cottage fat beloved himself arrived old. Grave widow hours among him ﻿no you led. Power had these met least nor young. Yet match drift wrong his our. 
+          </p>
+
+          <p>Old education him departure any arranging one prevailed. Their end whole might began her. Behaved the comfort another fifteen eat. Partiality had his themselves ask pianoforte increasing discovered. So mr delay at since place whole above miles. He to observe conduct at detract because. Way ham unwilling not breakfast furniture explained perpetual. Or mr surrounded conviction so astonished literature. Songs to an blush woman be sorry young. We certain as removal attempt. 
+          </p>
+
+          <p>Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in in brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as explained of difficult. No landlord of peculiar ladyship attended if contempt ecstatic. Loud wish made on is am as hard. Court so avoid in plate hence. Of received mr breeding concerns peculiar securing landlord. Spot to many it four bred soon well to. Or am promotion in no departure abilities. Whatever landlord yourself at by pleasure of children be. 
+          </p>
+
+          <p>Boy favourable day can introduced sentiments entreaties. Noisier carried of in warrant because. So mr plate seems cause chief widen first. Two differed husbands met screened his. Bed was form wife out ask draw. Wholly coming at we no enable. Offending sir delivered questions now new met. Acceptance she interested new boisterous day discretion celebrated. 
+          </p>
+
+          <p>Bringing unlocked me an striking ye perceive. Mr by wound hours oh happy. Me in resolution pianoforte continuing we. Most my no spot felt by no. He he in forfeited furniture sweetness he arranging. Me tedious so to behaved written account ferrars moments. Too objection for elsewhere her preferred allowance her. Marianne shutters mr steepest to me. Up mr ignorant produced distance although is sociable blessing. Ham whom call all lain like. 
+          </p>
+
+          <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered vicinity property yet. The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex drew six easy four dear cold deny. Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described acuteness propriety moonlight. 
+          </p>
+
+          <p>dmiration stimulated cultivated reasonable be projection possession of. Real no near room ye bred sake if some. Is arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of. Astonished set expression solicitude way admiration. 
+            related to the artistic side software development.
+          </p>
+        </div>
       </div>
 
       <div id="d">
-        <h1><a href="#d" data-id="d">D</a></h1>
+        <h1 class="nav"><a href="#d" data-id="d">D</a></h1>
         <div class="content">
             <h1>Current Projects</h1>
             <p>Besides this prortfolio you can also take a look at my
@@ -124,6 +207,7 @@
               <li>SF Public Open Spaces</li>
               <li>Data Visualizations</li>
             </ul>
+            <img src="images/mobile.svg">
           </div>
       </div>
     </div>

@@ -1,0 +1,120 @@
+<style>
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .row {
+    height: 100px;
+    transition: 300ms;
+    padding: 2rem;
+  }
+
+  .bigify {
+    height: 600px;
+  }
+</style>
+
+
+<div class="container">
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+  <div class="row">
+    <h1>Color 1</h1>
+    <p>This is an intersting color.</p>
+  </div>
+</div>
+
+<!-- https://github.com/iamdustan/smoothscroll -->
+<script src="js/smoothscroll.js"></script>
+<script>
+
+  const rows = Array.from(document.querySelectorAll('.row'))
+  rows.forEach(function(row, i) {
+    const hue = 360 / rows.length * i
+    row.style.backgroundColor = `hsla(${hue}, 50%, 50%, 1.0)`
+  })
+
+  document.querySelector('body').addEventListener('click', function(e) {
+    const row = e.target.closest('.row') 
+
+    console.log(row)
+
+    if (row === null) {
+      return
+    }
+
+    if (row.matches('.bigify')) {
+      smallify()
+      return
+    }
+
+    smallify()
+    row.classList.add('bigify')
+
+    setTimeout(function() {
+      row.scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+    }, 300)
+    
+  })
+
+  function smallify() {
+    rows.forEach(function(row) {
+      row.classList.remove('bigify')
+    })
+  }
+
+</script>

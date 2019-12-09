@@ -3,6 +3,10 @@
   <head>
     <title>Mitchell Hudson</title>
     <style>
+
+      /* -------------------------------------------- */
+      /* Set up the window */
+
       * {
         box-sizing: border-box;
       }
@@ -17,6 +21,14 @@
         line-height: 1.5;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+      }
+
+      /* --------------------------------------------- */
+      /* Container */
+
       .container {
         position: absolute;
         width: calc(200% - 4em);
@@ -29,9 +41,9 @@
         top: 0;
       }
 
-      h1 {
-        margin: 0;
-      }
+
+      /* ------------------------------------------- */
+      /* Nav */
 
       .nav {
         color: #fff;
@@ -69,12 +81,6 @@
         position: absolute;
       }
 
-      #a {
-        justify-content: flex-end;
-        align-items: flex-end;
-        background-color: rgb(232, 208, 129);
-      }
-
       .container > div:nth-child(2)  {
         justify-content: flex-start;
         align-items: flex-end;
@@ -96,13 +102,21 @@
       /* -------------------------------------- */
       /* Content */
       .content {
-        margin: 4em;
+        margin: 5em;
         max-width: 560px;
         height: calc(100% - 4em);
         overflow: scroll;
+        position: relative;
       }
 
+
+      /* ---------------------------------------------- */
+      /* A */
+
       #a {
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: rgb(232, 208, 129);
         flex-direction: column;
         justify-content: flex-end;
       }
@@ -112,6 +126,27 @@
         flex-direction: column;
         justify-content: flex-end;
       }
+
+      #a > .content > h1 {
+        font-size: 4rem;
+        /* letter-spacing: 0.5em; */
+        line-height: 4rem;
+        color: rgba(0,0,0,0.37)
+      }
+
+      .a-image-row {
+        display: flex;
+        width: 100%;
+        height: 180px;
+      }
+
+      .a-image-row > img {
+        width: 33.33%;
+        height: auto;
+      }
+
+      /* --------------------------------------------- */
+      /* B */
 
       #b > .content > div {
         display: flex;
@@ -124,9 +159,26 @@
         justify-content: flex-end;
       }
 
+      .b-image-header {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        right: 4rem;
+        top: 4rem;
+        border: 7px solid #fff;
+        border-radius: 50%;
+      }
+
+
+      /* ---------------------------------------------- */
+      /* C */
+
       #c {
 
       }
+
+      /* ---------------------------------------------- */
+      /* D */
 
       #d {
 
@@ -153,7 +205,11 @@
           <h1>Mitchell Hudson</h1>
           <p>Knows a little CSS and JavaScript, and likes to put what he 
             knows together in creative ways.</p>
-          <p><img src="./images/bowl.svg"></p>
+          <p class="a-image-row">
+            <img src="./images/bowl.svg">
+            <img src="./images/ramen.svg">
+            <img src="./images/onigiri.svg">
+          </p>
         </div>
       </div>
 
@@ -162,7 +218,7 @@
         <div class="content">
           <div>
               <h1>Skills</h1>
-              <img src="./images/experiments.svg">
+              <img class="b-image-header" src="./images/experiments.svg">
           </div>
           <p>Has worked on large and small projects for a variety of 
             clients. Has made protypes and product mock ups in a 

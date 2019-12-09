@@ -53,18 +53,15 @@
         line-height: 3.4rem;
         text-align: center;
         border-radius: 50%;
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+        color: #fff;
+        position: absolute;
       }
 
       .nav:hover {
         border-color: #000;
-      }
-
-      .nav > a {
-        display: block;
-        color: #fff;
-      }
-
-      .nav:hover > a {
         color: #000;
       }
 
@@ -75,10 +72,6 @@
       .container > div {
         padding: 1em;
         display: flex;
-      }
-
-      .container > div > h1 {
-        position: absolute;
       }
 
       .container > div:nth-child(2)  {
@@ -109,6 +102,9 @@
         position: relative;
       }
 
+      .content-header {
+        opacity: 0.5;
+      }
 
       /* ---------------------------------------------- */
       /* A */
@@ -143,6 +139,7 @@
       .a-image-row > img {
         width: 33.33%;
         height: auto;
+        opacity: 0.5;
       }
 
       /* --------------------------------------------- */
@@ -167,6 +164,7 @@
         top: 4rem;
         border: 7px solid #fff;
         border-radius: 50%;
+        opacity: 0.25;
       }
 
 
@@ -193,6 +191,7 @@
       .image-grid > img {
         width: 120px;
         height: auto;
+        opacity: 0.5;
       }
     </style>
   </head>
@@ -200,9 +199,9 @@
     <div class="container">
 
       <div id="a">
-        <h1 class="nav"><a href="#a" data-id="a">A</a></h1>
+        <a class="nav" href="#a" data-id="a">A</a>
         <div class="content">
-          <h1>Mitchell Hudson</h1>
+          <h1 class="content-header">Mitchell Hudson</h1>
           <p>Knows a little CSS and JavaScript, and likes to put what he 
             knows together in creative ways.</p>
           <p class="a-image-row">
@@ -214,10 +213,10 @@
       </div>
 
       <div id="b">
-        <h1 class="nav"><a href="#b" data-id="b">B</a></h1>
+        <a class="nav" href="#b" data-id="b">B</a>
         <div class="content">
           <div>
-              <h1>Skills</h1>
+              <h1 class="content-header">Skills</h1>
               <img class="b-image-header" src="./images/experiments.svg">
           </div>
           <p>Has worked on large and small projects for a variety of 
@@ -234,9 +233,9 @@
       </div>
 
       <div id="c">
-        <h1 class="nav"><a href="#c" data-id="c">C</a></h1>
+        <a class="nav" href="#c" data-id="c">C</a>
         <div class="content">
-          <h1>Experience</h1>
+          <h1 class="content-header">Experience</h1>
           <p>Spent many years teaching college courses mostly
             related to the artistic side software development.
           </p>
@@ -266,9 +265,9 @@
       </div>
 
       <div id="d">
-        <h1 class="nav"><a href="#d" data-id="d">D</a></h1>
+        <a class="nav" href="#d" data-id="d">D</a>
         <div class="content">
-            <h1>Current Projects</h1>
+            <h1 class="content-header">Current Projects</h1>
             <p>Besides this prortfolio you can also take a look at my
               current projects on GitHub
             </p>

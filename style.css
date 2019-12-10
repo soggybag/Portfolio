@@ -263,3 +263,12 @@ a {
   }
 
 }
+
+
+.some-class {
+  background-image: url(), url();
+  background-position: -100%, ;
+} 
+
+el.style.backgroundImage = 'url(), url()'
+el.style.backgroundPosition = 

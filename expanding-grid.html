@@ -1,0 +1,108 @@
+
+<style>
+    * {
+      margin: 0; 
+      padding: 0;
+    }
+  
+    body, html {
+      height: 100%;
+    }
+  
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(32, 199, 218);
+    }
+  
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: calc(240px + 4em);
+    }
+  
+    .cell {
+      margin: 1rem;
+      background-color: rgb(97, 226, 240);
+      overflow: hidden;
+      transition: 200ms;
+      width: 120px;
+    }
+  
+    h1 {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .expand {
+      width: 400px;
+      height: 400px;
+    }
+  
+  </style>
+  
+
+<div class="container">
+
+  <div class="cell" data-col="0" data-row="0">
+    <h1>Hello</h1>
+    <p>Hello a traditional greeting in the english language. </p>
+  </div>
+
+  <div class="cell" data-col="1" data-row="0">
+    <h1>Hello</h1>
+    <p>Hello a traditional greeting in the english language. </p>
+  </div>
+
+  <div class="cell" data-col="0" data-row="1">
+    <h1>Hello</h1>
+    <p>Hello a traditional greeting in the english language. </p>
+  </div>
+
+  <div class=" cell" data-col="1" data-row="1">
+    <h1>Hello</h1>
+    <p>Hello a traditional greeting in the english language. </p>
+  </div>
+
+</div>
+
+<script>
+  const cells = Array.from(document.querySelectorAll('.cell'))
+  const container = document.querySelector('.container')
+  const size = 2
+
+  document.querySelector('body').addEventListener('click', function(e) {
+    const cell = e.target.closest('.cell')
+    if (cell && cell.matches('.cell')) {
+      const col = parseInt(cell.dataset.col)
+      const row = parseInt(cell.dataset.row)
+      cells.forEach(function(cell, i) {
+        const c = i % size
+        const r = Math.floor(i / size)
+
+        console.log(c, r, col, row)
+
+        if (col === c) {
+          cell.style.width = '200px'
+        } else {
+          cell.style.width = '20px'
+        }
+
+        if (row === r) {
+          cell.style.height = '200px'
+        } else {
+          cell.style.height = '20px'
+        }
+      })
+    }
+  })
+
+  function shrinkAll() {
+   
+  }
+</script>

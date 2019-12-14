@@ -30,6 +30,10 @@ a {
   color: #fff;
 }
 
+#portfolio {
+  min-width: 780px;
+}
+
 /* --------------------------- */
 /* Ornaments */
 .leaf {
@@ -176,6 +180,7 @@ a {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 4rem;
 }
 
 .page-footer > .icon-grid {
@@ -224,6 +229,10 @@ a {
 @media screen and (max-width: 600px) {
   body {
     /* background-color: red; */
+  }
+
+  #portfolio {
+    min-width: auto;
   }
 
   .project {

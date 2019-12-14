@@ -1,0 +1,125 @@
+
+<style>
+  * {
+    margin: 0; 
+    padding: 0;
+  }
+
+  body, html {
+    height: 100%;
+  }
+
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+  }
+
+  .container {
+    width: 600px;
+    height: 600px;
+    
+    /* border: 1px solid; */
+    position: relative;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 10px solid rgba(0,0,0,0.21); */
+    border-radius: 50%;
+    background-color: rgb(240, 200, 97);
+    overflow: hidden;
+    transition: 200ms;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  .circle:nth-child(1) {
+    left: calc(400px / 3);
+    top: calc((400px / 3));
+  }
+  .circle:nth-child(2) {
+    left: calc((400px / 3 * 2) + 100px);
+    top: calc((400px / 3));
+  }
+  .circle:nth-child(3) {
+    left: calc(400px / 3);
+    top: calc((400px / 3 * 2) + 100px);
+  }
+  .circle:nth-child(4) {
+    left: calc((400px / 3 * 2) + 100px);
+    top: calc((400px / 3 * 2) + 100px);
+  }
+
+  h1 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  p {
+    width: 300px;
+    margin: 2rem auto;
+  }
+
+  .expand {
+    width: 600px;
+    height: 600px;
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 9999;
+  }
+
+</style>
+  
+
+<div class="container">
+
+  <div class="circle">
+    <h1>Hello</h1>
+    <p>Hello a traditional greeting in the english language. </p>
+  </div>
+
+  <div class="circle">
+    <h1>Hello</h1>
+    <p>Hello a traditional greeting in the english language. </p>
+  </div>
+
+  <div class="circle">
+    <h1>Hello</h1>
+    <p>Hello a traditional greeting in the english language. </p>
+  </div>
+
+  <div class="circle">
+    <h1>Hello</h1>
+    <p>Hello a traditional greeting in the english language. </p>
+  </div>
+
+</div>
+
+
+
+<script>
+  const circles = Array.from(document.querySelectorAll('.circle'))
+  document.querySelector('body').addEventListener('click', function(e) {
+    if (e.target.closest('.circle').matches('.circle')) {
+      e.target.closest('.circle').classList.toggle('expand')
+    }
+  })
+
+  function shrinkAll() {
+    circles.forEach(function(circle) {
+      
+    })
+  }
+</script>

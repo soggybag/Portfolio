@@ -95,7 +95,8 @@
       /* -------------------------------------- */
       /* Content */
       .content {
-        margin: 5em;
+        margin: 3rem;
+        padding: 1rem;
         max-width: 560px;
         height: calc(100% - 4em);
         overflow: scroll;
@@ -104,6 +105,10 @@
 
       .content-header {
         opacity: 0.5;
+      }
+
+      .content-box {
+        position: relative;
       }
 
       /* ---------------------------------------------- */
@@ -115,6 +120,14 @@
         background-color: rgb(232, 208, 129);
         flex-direction: column;
         justify-content: flex-end;
+        border-right: 6rem solid rgb(211, 181, 80);
+        border-bottom: 6rem solid rgb(211, 181, 80);
+      }
+
+      #a > .nav {
+        position: absolute;
+        right: -5rem;
+        bottom: -5rem;
       }
 
       #a > .content {
@@ -145,6 +158,17 @@
       /* --------------------------------------------- */
       /* B */
 
+      #b {
+        border-left: 6rem solid rgb(206, 118, 11);
+        border-bottom: 6rem solid rgb(206, 118, 11);
+      }
+
+      #b > .nav {
+        position: absolute;
+        left: -5rem;
+        bottom: -5rem;
+      }
+
       #b > .content > div {
         display: flex;
         align-items: flex-end;
@@ -172,14 +196,28 @@
       /* C */
 
       #c {
+        border-top: 6rem solid rgb(102, 154, 102);
+        border-right: 6rem solid rgb(102, 154, 102);
+      }
 
+      #c > .nav {
+        position: absolute;
+        right: -5rem;
+        top: -5rem;
       }
 
       /* ---------------------------------------------- */
       /* D */
 
       #d {
+        border-top: 6rem solid rgb(70, 134, 136);
+        border-left: 6rem solid rgb(70, 134, 136);
+      }
 
+      #d > .nav {
+        position: absolute;
+        left: -5rem;
+        top: -5rem;
       }
 
       .image-grid {
@@ -198,7 +236,7 @@
   <body>
     <div class="container">
 
-      <div id="a">
+      <div id="a" class="content-box">
         <a class="nav" href="#a" data-id="a">A</a>
         <div class="content">
           <h1 class="content-header">Mitchell Hudson</h1>
@@ -212,7 +250,7 @@
         </div>
       </div>
 
-      <div id="b">
+      <div id="b" class="content-box">
         <a class="nav" href="#b" data-id="b">B</a>
         <div class="content">
           <div>
@@ -232,7 +270,7 @@
         </div>
       </div>
 
-      <div id="c">
+      <div id="c" class="content-box">
         <a class="nav" href="#c" data-id="c">C</a>
         <div class="content">
           <h1 class="content-header">Experience</h1>
@@ -264,7 +302,7 @@
         </div>
       </div>
 
-      <div id="d">
+      <div id="d" class="content-box">
         <a class="nav" href="#d" data-id="d">D</a>
         <div class="content">
             <h1 class="content-header">Current Projects</h1>
@@ -302,6 +340,9 @@
           </div>
       </div>
     </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/072ce5392e.js" crossorigin="anonymous"></script>
 
     <script>
       const container = document.querySelector('.container')

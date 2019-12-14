@@ -203,10 +203,6 @@ a {
   font-size: 2.5rem;
 }
 
-.epilog {
-  
-}
-
 .footer-center {
   flex: 1;
 }
@@ -227,9 +223,6 @@ a {
 
 
 @media screen and (max-width: 600px) {
-  body {
-    /* background-color: red; */
-  }
 
   #portfolio {
     min-width: auto;
@@ -273,11 +266,3 @@ a {
 
 }
 
-
-.some-class {
-  background-image: url(), url();
-  background-position: -100%, ;
-} 
-
-el.style.backgroundImage = 'url(), url()'
-el.style.backgroundPosition = 

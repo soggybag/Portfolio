@@ -16,8 +16,19 @@
       align-items: center;
       background-color: rgb(32, 199, 218);
     }
+
+    .wrapper {
+      /* height: 0;
+      overflow: hidden;
+      padding-top: 600px;
+      position: relative; */
+    }
   
     .container {
+      /* position: absolute;
+      top: 0;
+      left: 0; */
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -31,8 +42,8 @@
       background-color: rgb(97, 226, 240);
       overflow: hidden;
       transition: 200ms;
-      width: calc(33% - 4em);
-      height: calc(33% - 4em);
+      width: calc(33% - 2em);
+      height: calc(33% - 2em);
     }
   
     h1 {
@@ -42,10 +53,6 @@
       text-align: center;
     }
 
-    .expand {
-      width: 400px;
-      height: 400px;
-    }
 
     .cell:nth-child(1) { background-color: lightcoral;}
     .cell:nth-child(2) { background-color: rgb(240, 173, 128);}
@@ -59,116 +66,125 @@
 
     .content {
       padding: 1rem;
-      /* opacity: 0; */
+      opacity: 0;
+      transition: 400ms;
     }
 
-    
+    .cell.open-width.open-height > .content {
+      opacity: 1;
+    }
   
     .icon {
-      border: 3px solid;
-      padding: 0.5rem;
-      text-align: center;
+      display: flex;
+      justify-content: center;
     }
 
     .icon > i {
+      border: 3px solid;
+      padding: 0.25rem;
+      text-align: center;
+      margin: 0.5rem;
       font-size: 2rem;
+      text-align: center;
     }
   </style>
   
 
-<div class="container">
+<div class="wrapper">
+  <div class="container">
 
-  <div class="cell" data-col="0" data-row="0">
-    <div class="icon">
-      <i class="fab fa-html5"></i>
+    <div class="cell" data-col="0" data-row="0">
+      <div class="icon">
+        <i class="fab fa-html5"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+      </div>
     </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
+
+    <div class="cell" data-col="1" data-row="0">
+      <div class="icon">
+        <i class="fab fa-github-square"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+      </div>
     </div>
+
+    <div class="cell" data-col="2" data-row="0">
+      <div class="icon">
+        <i class="fab fa-react"></i>  
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+      </div>
+    </div>
+
+    <div class=" cell" data-col="0" data-row="1">
+      <div class="icon">
+        <i class="fab fa-stack-overflow"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+      </div>
+    </div>
+
+    <div class=" cell" data-col="1" data-row="1">
+      <div class="icon">
+        <i class="fab fa-slack"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+      </div>
+    </div>
+
+    <div class=" cell" data-col="2" data-row="1">
+      <div class="icon">
+        <i class="fab fa-app-store-ios"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+      </div>
+    </div>
+
+    <div class=" cell" data-col="0" data-row="2">
+      <div class="icon">
+        <i class="fab fa-swift"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+      </div>
+    </div>
+
+    <div class=" cell" data-col="1" data-row="2">
+      <div class="icon">
+        <i class="fab fa-js-square"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+      </div>
+    </div>
+
+    <div class=" cell" data-col="2" data-row="2">
+      <div class="icon">
+      <i class="fas fa-atom"></i>
+      </div>
+      <div class="content">
+        <h1>Hello</h1>
+        <p>Hello a traditional greeting in the english language. </p>
+        <i class="fab fa-css3-alt"></i>
+      </div>
+    </div>
+
   </div>
-
-  <div class="cell" data-col="1" data-row="0">
-    <div class="icon">
-      <i class="fab fa-github-square"></i>
-    </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
-    </div>
-  </div>
-
-  <div class="cell" data-col="2" data-row="0">
-    <div class="icon">
-      <i class="fab fa-react"></i>  
-    </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
-    </div>
-  </div>
-
-  <div class=" cell" data-col="0" data-row="1">
-    <div class="icon">
-      <i class="fab fa-stack-overflow"></i>
-    </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
-    </div>
-  </div>
-
-  <div class=" cell" data-col="1" data-row="1">
-    <div class="icon">
-      <i class="fab fa-slack"></i>
-    </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
-    </div>
-  </div>
-
-  <div class=" cell" data-col="2" data-row="1">
-    <div class="icon">
-      <i class="fab fa-app-store-ios"></i>
-    </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
-    </div>
-  </div>
-
-  <div class=" cell" data-col="0" data-row="2">
-    <div class="icon">
-      <i class="fab fa-swift"></i>
-    </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
-    </div>
-  </div>
-
-  <div class=" cell" data-col="1" data-row="2">
-    <div class="icon">
-      <i class="fab fa-js-square"></i>
-    </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
-    </div>
-  </div>
-
-  <div class=" cell" data-col="2" data-row="2">
-    <div class="icon">
-    <i class="fas fa-atom"></i>
-    </div>
-    <div class="content">
-      <h1>Hello</h1>
-      <p>Hello a traditional greeting in the english language. </p>
-      <i class="fab fa-css3-alt"></i>
-    </div>
-  </div>
-
 </div>
 
 <!-- JS -->
@@ -184,22 +200,39 @@
     if (cell && cell.matches('.cell')) {
       const col = parseInt(cell.dataset.col)
       const row = parseInt(cell.dataset.row)
+
+      if (cell.matches('.open-width.open-height')) {
+        cells.forEach(function(cell) {
+          cell.style.width = 'calc(33% - 2em)'
+          cell.style.height = 'calc(33% - 2em)'
+          cell.classList.remove('open-width')
+          cell.classList.remove('closed-width')
+        })
+        return
+      }
+
       cells.forEach(function(cell, i) {
         const c = i % size
         const r = Math.floor(i / size)
 
-        console.log(c, r, col, row)
-
         if (col === c) {
           cell.style.width = 'calc(80% - 2em)'
+          cell.classList.add('open-width')
+          cell.classList.remove('closed-width')
         } else {
           cell.style.width = 'calc(10% - 2em)'
+          cell.classList.add('closed-width')
+          cell.classList.remove('open-width')
         }
 
         if (row === r) {
           cell.style.height = 'calc(80% - 2em)'
+          cell.classList.add('open-height')
+          cell.classList.remove('closed-height')
         } else {
           cell.style.height = 'calc(10% - 2em)'
+          cell.classList.add('closed-height')
+          cell.classList.remove('open-height')
         }
       })
     }

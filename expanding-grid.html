@@ -1,94 +1,154 @@
 
 <style>
-    * {
-      margin: 0; 
-      padding: 0;
-      box-sizing: border-box;
-    }
-  
-    body, html {
-      height: 100%;
-    }
-  
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(32, 199, 218);
-    }
 
-    .wrapper {
-      /* height: 0;
-      overflow: hidden;
-      padding-top: 600px;
-      position: relative; */
-    }
-  
-    .container {
-      /* position: absolute;
-      top: 0;
-      left: 0; */
+  * {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 100%;
-    }
-  
-    .cell {
-      margin: 1rem;
-      background-color: rgb(97, 226, 240);
-      overflow: hidden;
-      transition: 200ms;
-      width: calc(33% - 2em);
-      height: calc(33% - 2em);
-    }
-  
-    h1 {
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
-      text-align: center;
-    }
+  body, html {
+    height: 100%;
+  }
+
+  body {
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    background-color: rgb(19, 138, 152);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    /* height: 0;
+    overflow: hidden;
+    padding-top: 600px;
+    position: relative; */
+  }
+
+  .container {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
+    padding: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cell {
+    margin: 0.5em;
+    padding: 2rem;
+    background-color: rgb(97, 226, 240);
+    overflow: hidden;
+    transition: 200ms;
+    width: calc(33% - 1em);
+    height: calc(33% - 1em);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  h1 {
+    
+  }
 
 
-    .cell:nth-child(1) { background-color: lightcoral;}
-    .cell:nth-child(2) { background-color: rgb(240, 173, 128);}
-    .cell:nth-child(3) { background-color: rgb(240, 204, 128);}
-    .cell:nth-child(4) { background-color: rgb(177, 219, 121);}
-    .cell:nth-child(5) { background-color: rgb(121, 219, 170);}
-    .cell:nth-child(6) { background-color: rgb(121, 196, 219);}
-    .cell:nth-child(7) { background-color: rgb(144, 161, 228);}
-    .cell:nth-child(8) { background-color: rgb(165, 144, 228);}
-    .cell:nth-child(9) { background-color: rgb(228, 144, 211);}
+  .cell:nth-child(1) { 
+    background-color: lightcoral;
+    background-image: url(./images/bowl.svg);
+  }
+  .cell:nth-child(2) { 
+    background-color: rgb(240, 173, 128);
+    background-image: url(./images/experiments.svg);
+  }
+  .cell:nth-child(3) { 
+    background-color: rgb(240, 204, 128);
+    background-image: url(./images/eye.svg);
+  }
+  .cell:nth-child(4) { 
+    background-color: rgb(177, 219, 121);
+    background-image: url(./images/heart.svg);
+  }
+  .cell:nth-child(5) { 
+    background-color: rgb(121, 219, 170);
+    background-image: url(./images/meter.svg);
+  }
+  .cell:nth-child(6) { 
+    background-color: rgb(121, 196, 219);
+    background-image: url(./images/mobile.svg);
+  }
+  .cell:nth-child(7) { 
+    background-color: rgb(144, 161, 228);
+    background-image: url(./images/node.svg);
+  }
+  .cell:nth-child(8) { 
+    background-color: rgb(165, 144, 228);
+    background-image: url(./images/onigiri.svg);
+  }
+  .cell:nth-child(9) { 
+    background-color: rgb(228, 144, 211);
+    background-image: url(./images/ramen.svg);
+  }
 
-    .content {
-      padding: 1rem;
-      opacity: 0;
-      transition: 400ms;
-    }
+  .content {
+    opacity: 0;
+    transition: 400ms;
+  }
 
-    .cell.open-width.open-height > .content {
-      opacity: 1;
-    }
-  
-    .icon {
-      display: flex;
-      justify-content: center;
-    }
+  .cell.open-width.open-height > .content {
+    opacity: 1;
+  }
 
-    .icon > i {
-      border: 3px solid;
-      padding: 0.25rem;
-      text-align: center;
-      margin: 0.5rem;
-      font-size: 2rem;
-      text-align: center;
-    }
-  </style>
-  
+  .icon {
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+
+  .icon > i {
+    border: 3px solid;
+    padding: 0.25rem;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+  .outer {
+    position: relative;
+  }
+
+  .outer::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: calc((1009 / 983) * 100%);
+  }
+
+  .outer > .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: red
+  }
+}
+
+</style>
+
+<div class="test">
+  <div class="inner"></div>
+</div>
 
 <div class="wrapper">
   <div class="container">
@@ -194,6 +254,8 @@
   const cells = Array.from(document.querySelectorAll('.cell'))
   const container = document.querySelector('.container')
   const size = 3
+  const wh = 100 / 3 
+  const margin = '1em'
 
   document.querySelector('body').addEventListener('click', function(e) {
     const cell = e.target.closest('.cell')
@@ -203,8 +265,8 @@
 
       if (cell.matches('.open-width.open-height')) {
         cells.forEach(function(cell) {
-          cell.style.width = 'calc(33% - 2em)'
-          cell.style.height = 'calc(33% - 2em)'
+          cell.style.width = `calc(${wh}% - ${margin})`
+          cell.style.height = `calc(${wh}% - ${margin})`
           cell.classList.remove('open-width')
           cell.classList.remove('closed-width')
         })
@@ -216,21 +278,21 @@
         const r = Math.floor(i / size)
 
         if (col === c) {
-          cell.style.width = 'calc(80% - 2em)'
+          cell.style.width = `calc(80% - ${margin})`
           cell.classList.add('open-width')
           cell.classList.remove('closed-width')
         } else {
-          cell.style.width = 'calc(10% - 2em)'
+          cell.style.width = `calc(10% - ${margin})`
           cell.classList.add('closed-width')
           cell.classList.remove('open-width')
         }
 
         if (row === r) {
-          cell.style.height = 'calc(80% - 2em)'
+          cell.style.height = `calc(80% - ${margin})`
           cell.classList.add('open-height')
           cell.classList.remove('closed-height')
         } else {
-          cell.style.height = 'calc(10% - 2em)'
+          cell.style.height = `calc(10% - ${margin})`
           cell.classList.add('closed-height')
           cell.classList.remove('open-height')
         }

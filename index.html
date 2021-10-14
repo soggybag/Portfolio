@@ -10,7 +10,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <section id="portfolio">
+    <section id="portfolio" role="navigation">
       <section class="page-header">
         <h1 class="page-title">Mitchell Hudson</h1>
         <nav class="page-nav">
@@ -22,12 +22,10 @@
         </nav>
       </section>
 
-      <div class="leaf">
-
-      </div>
+      <div class="leaf"></div>
 
       <div>
-        <section>
+        <section class="main" role="main">
 
           <section id="vision" class="project">
             <div class="project-content">
@@ -235,7 +233,7 @@
       // - Needed to add a polyfill since 'smooth' option is 
       //   not supported in Safari currently. 
 
-      // Add button events. 
+      // Add click events. 
       const body = document.querySelector('body')
       body.addEventListener('click', function(e) {
         if (e.target.matches('.external')) {

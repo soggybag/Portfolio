@@ -5,6 +5,32 @@
     <style>
 
       /* -------------------------------------------- */
+      /* Colors */
+
+      :root {
+        /* Color section a */
+        --color-a-1: rgb(232, 208, 129);
+        --color-a-2: rgb(211, 181, 80);
+        --color-a-3: rgb(159, 133, 50);
+        /* Color section b */
+        --color-b-1: rgb(242, 143, 21);
+        --color-b-2: rgb(206, 118, 11);
+        --color-b-3: rgb(145, 80, 1);
+        /* Color section c */
+        --color-c-1: rgb(144, 189, 144);
+        --color-c-2: rgb(102, 154, 102);
+        --color-c-3: rgb(84, 132, 84);
+        /* Color section d */
+        --color-d-1: cadetblue;
+        --color-d-2: rgb(70, 134, 136);
+        --color-d-3: rgb(46, 97, 99);
+
+        /* Other colors */
+        --color-dark: rgb(27, 30, 31);
+        --color-light: #fff;
+      }
+
+      /* -------------------------------------------- */
       /* Set up the window */
 
       * {
@@ -46,7 +72,7 @@
       /* Nav */
 
       .nav {
-        color: #fff;
+        color: var(--color-light);
         border: 7px solid;
         width: 4rem;
         height: 4rem;
@@ -56,18 +82,41 @@
         font-size: 2rem;
         font-weight: 900;
         display: block;
-        color: #fff;
         position: absolute;
       }
 
-      .nav:hover {
-        border-color: #000;
-        color: #000;
+      .nav:hover:not(.active) {
+        border-color: var(--color-light);
+        color: var(--color-light) !important;
+      }
+
+      .nav:hover:not(.active) {
+        border-color: var(--color-dark);
+        color: var(--color-dark) !important;
       }
 
       a {
         text-decoration: none;
       }
+
+      #a a.nav.active {
+        color: var(--color-a-3);
+      }
+
+      #b a.nav.active {
+        color: var(--color-b-3);
+      }
+
+      #c a.nav.active {
+        color: var(--color-c-3);
+      }
+
+      #d a.nav.active {
+        color: var(--color-d-3);
+      }
+
+      /* ----------------------------------- */
+      /* Container */
 
       .container > div {
         /* padding: 1em; */
@@ -77,19 +126,17 @@
       .container > div:nth-child(2)  {
         justify-content: flex-start;
         align-items: flex-end;
-        background-color:darkorange;
       }
 
       .container > div:nth-child(3) {
         justify-content: flex-end;
         align-items: flex-start;
-        background-color: darkseagreen;
       }
 
       .container > div:nth-child(4) {
+        background-color: var(--color-d-1);
         justify-content: flex-start;
         align-items: flex-start;
-        background-color: cadetblue;
       }
 
       /* -------------------------------------- */
@@ -115,13 +162,13 @@
       /* A */
 
       #a {
+        background-color: var(--color-a-1);
+        border-right: 6rem solid var(--color-a-2);
+        border-bottom: 6rem solid var(--color-a-2);
         justify-content: flex-end;
         align-items: flex-end;
-        background-color: rgb(232, 208, 129);
         flex-direction: column;
         justify-content: flex-end;
-        border-right: 6rem solid rgb(211, 181, 80);
-        border-bottom: 6rem solid rgb(211, 181, 80);
       }
 
       #a > .nav {
@@ -137,10 +184,10 @@
       }
 
       #a > .content > h1 {
+        color: var(--color-dark);
         font-size: 4rem;
         /* letter-spacing: 0.5em; */
         line-height: 4rem;
-        color: rgba(0,0,0,0.37)
       }
 
       .a-image-row {
@@ -159,8 +206,9 @@
       /* B */
 
       #b {
-        border-left: 6rem solid rgb(206, 118, 11);
-        border-bottom: 6rem solid rgb(206, 118, 11);
+        background-color: var(--color-b-1);
+        border-left: 6rem solid var(--color-b-2);
+        border-bottom: 6rem solid var(--color-b-2);
       }
 
       #b > .nav {
@@ -181,12 +229,12 @@
       }
 
       .b-image-header {
+        border: 7px solid var(--color-light);
         width: 300px;
         height: auto;
         position: absolute;
         right: 4rem;
         top: 4rem;
-        border: 7px solid #fff;
         border-radius: 50%;
         opacity: 0.25;
       }
@@ -196,8 +244,9 @@
       /* C */
 
       #c {
-        border-top: 6rem solid rgb(102, 154, 102);
-        border-right: 6rem solid rgb(102, 154, 102);
+        background-color: var(--color-c-1);
+        border-top: 6rem solid var(--color-c-2);
+        border-right: 6rem solid var(--color-c-2);
       }
 
       #c > .nav {
@@ -215,8 +264,8 @@
       /* D */
 
       #d {
-        border-top: 6rem solid rgb(70, 134, 136);
-        border-left: 6rem solid rgb(70, 134, 136);
+        border-top: 6rem solid var(--color-d-2);
+        border-left: 6rem solid var(--color-d-2);
       }
 
       #d > .nav {
@@ -247,7 +296,7 @@
     <div class="container">
 
       <div id="a" class="content-box">
-        <a class="nav" href="#a" data-id="a">?</a>
+        <a class="nav active" href="#a" data-id="a">?</a>
         <div class="content">
           <h1 class="content-header">Mitchell Hudson</h1>
           <p>Knows a little CSS and JavaScript, and likes to put what he 
@@ -356,11 +405,23 @@
 
     <script>
       const container = document.querySelector('.container')
+      const buttons = document.querySelectorAll('.nav')
+      console.log(buttons)
+
       document.addEventListener('click', function(e) {
         e.preventDefault()
 
+        if (!e.target.matches('.nav')) {
+          return
+        } 
+
+        buttons.forEach(icon => {
+          icon.classList.remove('active')
+        })
+
         const id = e.target.dataset.id
         console.log(id)
+        e.target.classList.add('active')
 
         switch(id) {
           case 'a':

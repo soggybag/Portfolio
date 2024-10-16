@@ -12,6 +12,7 @@ These are my portfolio websites:
 - http://soggybag.github.io/Portfolio/four.html
 - http://soggybag.github.io/Portfolio/rows.html
 - http://soggybag.github.io/Portfolio/squares.html
+- http://soggybag.github.io/Portfolio/expanding-grid.html
 
 <!--
 

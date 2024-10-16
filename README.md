@@ -36,14 +36,6 @@ TODO: Projects. Need to compile projects into a single page.
 	- Harmonograph
 	- Pixelgram
 
-
-
-
-
-
-
-
-
 You can view my design work at Behance.net
 
 [https://www.behance.net/mitchellhudson](https://www.behance.net/mitchellhudson)
